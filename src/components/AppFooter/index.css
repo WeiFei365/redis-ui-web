@@ -1,0 +1,18 @@
+.app-footer {
+  background-color: #333;
+  padding: 20px 50px;
+}
+.app-contact {
+  padding-bottom: 20px;
+}
+.app-contact > * {
+  margin: 0 12px;
+  color: #fff;
+}
+
+.app-link {
+  margin: 0 24px;
+}
+.app-link img {
+  height: 36px;
+}

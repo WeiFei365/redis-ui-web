@@ -1,8 +1,8 @@
 import _ from 'lodash';
 
-import toHash from '../native/to-hash';
-import request from './request';
-import { API_BACKEND } from './config';
+import toHash from 'utils/native/to-hash';
+import request from 'utils/fetch/request';
+import { API_BACKEND } from 'utils/fetch/config';
 
 
 export default function fetchGet(url, data, options = {}, host = API_BACKEND) {

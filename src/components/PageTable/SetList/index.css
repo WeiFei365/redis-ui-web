@@ -1,0 +1,6 @@
+.set-list {
+}
+
+.card-extra > * {
+  min-width: 120px;
+}

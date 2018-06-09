@@ -22,7 +22,7 @@ export default function request(url, options) {
   }).then((data) => {
     // 1、前端错误处理
     if ([-1, -2, -3].indexOf(data.code) !== -1) {
-      throw `fetching error ${data.code}`;
+      throw new Error(`fetching error ${data.code}`);
     }
     // 2、检查成功的标志
     if (data.code === 0) {

@@ -1,27 +1,19 @@
 import React, { Component } from 'react';
-import fetchGet from './utils/fetch/get';
-import Button from './Antd/Button';
-import logo from './logo.svg';
-import './App.css';
+
+import AppHeader from 'components/AppHeader';
+import AppContent from 'components/AppContent';
+import AppFooter from 'components/AppFooter';
+
+import style from './App.css';
+
 
 class App extends Component {
-  componentDidMount() {
-    fetchGet('/redis_ui/keys').then((data) => {
-      console.log(data);
-    });
-  }
-
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-          <Button>Hello</Button>
-        </p>
+      <div className={style['app-content']}>
+        <AppHeader />
+        <AppContent />
+        <AppFooter />
       </div>
     );
   }

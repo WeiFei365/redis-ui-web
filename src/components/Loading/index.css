@@ -1,0 +1,8 @@
+.loading {
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.loading > * {
+  color: #40a9ff;
+}

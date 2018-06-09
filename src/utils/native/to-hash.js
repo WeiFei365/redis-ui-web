@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import fromJson from './from-json';
+import fromJson from 'utils/native/from-json';
 
 
 export default function toHash(data) {

@@ -1,0 +1,24 @@
+.page-table {
+  padding: 16px;
+}
+
+/********** DashBoard ************/
+.dash-board {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.db-col {
+  text-align: center;
+  cursor: pointer;
+}
+.selecled,
+.db-col:hover {
+  color: #40a9ff;
+}
+.db-col:not(:last-child) {
+  border-right: 1px solid #e8e8e8;
+}
+.db-col > p:last-child {
+  margin-bottom: 0;
+  font-size: 18px;
+}

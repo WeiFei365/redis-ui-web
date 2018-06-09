@@ -1,0 +1,21 @@
+.app-content {
+  position: relative;
+  min-height: 480px;
+  text-align: left;
+}
+
+.app-content *[class~=ant-tabs-bar] {
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+.is-loading {
+  position: absolute;
+  line-height: 90px;
+  height: 100%;
+}
+
+.tab-extra > * {
+  margin-left: 12px;
+  cursor: pointer;
+}
