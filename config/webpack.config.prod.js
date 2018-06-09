@@ -204,6 +204,9 @@ module.exports = {
                     {
                       loader: require.resolve('css-loader'),
                       options: {
+                        camelCase: true,
+                        modules: true,
+
                         importLoaders: 1,
                         minimize: true,
                         sourceMap: shouldUseSourceMap,

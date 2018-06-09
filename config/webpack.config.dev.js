@@ -188,6 +188,11 @@ module.exports = {
               {
                 loader: require.resolve('css-loader'),
                 options: {
+                  camelCase: true,
+                  modules: true,
+                  sourceMap: true,
+                  localIdentName: '[local]__[path][name]__[hash:base64:5]',
+
                   importLoaders: 1,
                 },
               },
