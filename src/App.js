@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+import fetchGet from './utils/fetch/get';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  componentDidMount() {
+    fetchGet('/redis_ui/keys').then((data) => {
+      console.log(data);
+    });
+  }
+
   render() {
     return (
       <div className="App">
