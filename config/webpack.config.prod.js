@@ -153,6 +153,30 @@ module.exports = {
               compact: true,
             },
           },
+          // less for antd
+          {
+            test: /\.less$/,
+            use: ExtractTextPlugin.extract({
+              fallback: 'style-loader',
+              use: [
+                {
+                  loader: 'css-loader',
+                  options: {
+                    // camelCase: true,
+                    // modules: true,
+                    importLoaders: 1,
+                  },
+                },
+                // 'postcss-loader',
+                {
+                  loader: 'less-loader',
+                  options: {
+                    javascriptEnabled: true,
+                  },
+                },
+              ],
+            }),
+          },
           // The notation here is somewhat confusing.
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.

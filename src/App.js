@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import fetchGet from './utils/fetch/get';
+import Button from './Antd/Button';
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +20,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
+          <Button>Hello</Button>
         </p>
       </div>
     );
