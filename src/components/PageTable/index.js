@@ -16,6 +16,7 @@ const DataCompt = {
   list: ListList,
   set: SetList,
   string: StringList,
+  none: StringList,
   zset: ZSetList,
 };
 
@@ -55,7 +56,7 @@ class PageTable extends Component {
     const self = this;
     const { tname, dataType } = self.props;
     const { ktype } = self.state;
-console.log(dataType);
+
     const Compt = DataCompt[ktype];
     return (
       <div className={style['page-table']}>

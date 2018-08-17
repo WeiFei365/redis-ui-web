@@ -41,7 +41,7 @@ class StringList extends Component {
     }
     self.setState({ isLoading: true });
 
-    fetchPost('/redis_ui/key/data', { tname, keyList, ktype }).then((data) => {
+    fetchPost('/redis_ui/key/data', { tname, keyList: keyList.slice(0, 1000), ktype }).then((data) => {
       if (data.tname !== (props || self.props).tname ||
         data.ktype !== (props || self.props).ktype) {
         return;
